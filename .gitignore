@@ -20,3 +20,6 @@ WebGoat/DB_Scripts/.DS_Store
 fileList.bin
 **/.user
 **/.suo
+**/.vs/**
+
+
