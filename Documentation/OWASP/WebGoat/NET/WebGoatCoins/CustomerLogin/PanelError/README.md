@@ -1,0 +1,16 @@
+# CustomerLogin\.PanelError Field
+
+[Home](../../../../../../README.md)
+
+**Containing Type**: [CustomerLogin](../README.md)
+
+**Assembly**: DotNetGoat\.dll
+
+```csharp
+protected System.Web.UI.WebControls.Panel PanelError
+```
+
+### Field Value
+
+[Panel](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.panel)
+
