@@ -86,17 +86,19 @@ namespace OWASP.WebGoat.NET
     	private string SHA(string s, WG_Hash hash)
     	{
     		byte[] bytes = System.Text.ASCIIEncoding.ASCII.GetBytes(s);
-			byte[] result;
+			byte[] result = new byte[] { };
             HashAlgorithm sha;
 			switch(hash){
 				case WG_Hash.Sha1:
 					sha = new SHA1Managed();
-			    	break;
+                    result = sha.ComputeHash(bytes);
+                    break;
 				case WG_Hash.Sha256:
 					sha = new SHA256Managed();
-					break;
+                    result = sha.ComputeHash(bytes);
+                    break;
 			}
-			result = sha.ComputeHash(bytes);
+			
 			return System.Convert.ToBase64String(result);
     	}
 
