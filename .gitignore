@@ -14,3 +14,5 @@ WebGoat/Configuration/*.config
 .DS_Store
 DB/.DS_Store
 WebGoat/DB_Scripts/.DS_Store
+.vs/WebGoat.NET/v17/.suo
+.vs/WebGoat.NET/v17/fileList.bin
