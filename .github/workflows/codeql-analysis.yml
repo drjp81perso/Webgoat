@@ -78,7 +78,7 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Build solution
       run: |
-        msbuild.exe WebGoat.NET.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release" /p:PublishUrl="../_build"
+        msbuild.exe WebGoat.NET.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:UseSharedCompilation=false /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release" /p:PublishUrl="../_build"
 
   
     - name: Perform CodeQL Analysis
