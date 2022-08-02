@@ -1,6 +1,0 @@
-projectKey=GOAT
-serverUrl=http://20.116.21.79
-serverVersion=9.4.0.54424
-dashboardUrl=http://20.116.21.79/dashboard?id=GOAT
-ceTaskId=AYAJqJHfrUKM6qBq00Vt
-ceTaskUrl=http://20.116.21.79/api/ce/task?id=AYAJqJHfrUKM6qBq00Vt
