@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 $vmname = "vm-sq-sonarqube"
 $sqlurl = "http://emyodesonar-dar.canadacentral.cloudapp.azure.com/"
@@ -37,3 +38,13 @@ cd C:\work\code\emyodesonar\SonarQubeScripts
 
 .\remove_nsg_firewall_vm.ps1 -vmname $vmname -resourcegroupname $resourcegname
 .\start_stopvm.ps1 -vmname $vmname -resourcegroup $resourcegname -shutdown
+=======
+#buildall
+#dotnet new tool-manifest --force
+#dotnet tool install dotnet-ef
+dotnet tool install --global dotnet-sonarscanner --version 5.4.1
+nuget restore
+dotnet sonarscanner begin /key:"GOAT" /name:"GOAT" /d:sonar.host.url="http://20.116.21.79/" /d:sonar.login="**************************" /version:0.0.0.8 /d:sonar.cs.vscoveragexml.reportsPaths="%temp%\*.coveragexml" /d:sonar.exclusions='**/wwwroot/lib/**'
+msbuild .\WebGoat.NET.sln
+dotnet sonarscanner end /d:sonar.login="***********************"
+>>>>>>> ad3d5afc74c0e95cc1952edcdd50abe44795a4b6
