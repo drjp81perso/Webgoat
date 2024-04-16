@@ -23,3 +23,4 @@ fileList.bin
 **/.vs/**
 /.sonarqube/**
 token.txt
+WebGoat/WebGoat.NET.csproj.user
